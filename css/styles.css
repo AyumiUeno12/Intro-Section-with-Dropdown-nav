@@ -1,0 +1,230 @@
+/*
+- Almost White: hsl(0, 0%, 98%)
+- Medium Gray: hsl(0, 0%, 41%)
+- Almost Black: hsl(0, 0%, 8%) */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: hsl(0, 0%, 41%);
+  font-family: "Epilogue", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  margin: 3rem;
+}
+
+.logo img {
+  height: 3rem;
+}
+
+.sp-menu {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.menu-desktop {
+  display: none;
+}
+
+/* HERO SECTION */
+.hero {
+  margin-bottom: 3rem;
+}
+
+.hero img {
+  width: 100%;
+}
+
+/* REMOTE WORK SECTION */
+.remote-work {
+  margin: 2rem;
+  margin-bottom: 6rem;
+  text-align: center;
+}
+
+.hero-img-desktop {
+  display: none;
+}
+
+.remote-work h1 {
+  color: hsl(0, 0%, 8%);
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+
+.remote-work p {
+  line-height: 1.4;
+  margin-bottom: 4rem;
+}
+
+.btn-div {
+  margin-bottom: 3rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1.5rem 2.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 8%);
+  border: 1px solid hsl(0, 0%, 8%);
+  font-weight: 700;
+}
+
+/* HEADER */
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem;
+}
+
+.logos img {
+  padding-bottom: 1.5rem;
+}
+
+/* MEDIA QYERUES */
+@media only screen and (min-width: 768px) {
+  body {
+    max-width: 200rem;
+    margin: 0 auto;
+    color: hsl(0, 0%, 41%);
+    /* background-color: pink; */
+  }
+
+  /* HEADER */
+  .sp-menu {
+    display: none;
+  }
+
+  .menu-desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 140rem; */
+  }
+
+  .main-menu-desktop ul {
+    display: flex;
+    width: 50rem;
+    margin-left: 5rem;
+    /* background-color: aquamarine; */
+  }
+
+  .main-menu-desktop ul li {
+    list-style: none;
+    margin-right: 4rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+  }
+
+  .main-menu-desktop ul li:last-child {
+    margin-right: 0;
+  }
+
+  .main-menu-desktop ul li a {
+    text-decoration: none;
+  }
+
+  .main-menu-desktop ul li a,
+  .main-menu-desktop ul li a:link,
+  .main-menu-desktop ul li a:visited {
+    color: hsl(0, 0%, 41%);
+    text-decoration: none;
+  }
+
+  .main-menu-desktop ul li a:hover,
+  .main-menu-desktop ul li a:active {
+    color: hsl(0, 0%, 8%);
+    font-weight: 700;
+  }
+
+  .login-menu-desktop ul {
+    display: flex;
+    align-items: center;
+    margin-left: 50vw;
+    /* background-color: palevioletred; */
+  }
+
+  .login-menu-desktop ul li {
+    list-style: none;
+    margin-right: 4rem;
+    justify-content: flex-end;
+    font-size: 1.6rem;
+    cursor: pointer;
+  }
+
+  .login-menu-desktop ul li a,
+  .login-menu-desktop ul li a:link,
+  .login-menu-desktop ul li a:visited {
+    color: hsl(0, 0%, 41%);
+    text-decoration: none;
+  }
+
+  .login-menu-desktop ul li a:hover,
+  .login-menu-desktop ul li a:active {
+    color: hsl(0, 0%, 8%);
+    font-weight: 700;
+  }
+
+  .arrow-down {
+    margin-left: 1rem;
+  }
+
+  .register,
+  .register:link,
+  .register:active {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 41%);
+    border: 1px solid hsl(0, 0%, 41%);
+    padding: 1.5rem 2.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .register:hover,
+  .register:active {
+    border: 3px solid hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 8%);
+  }
+
+  /* HERO SECTION */
+  .hero-img-mobile {
+    display: none;
+  }
+
+  .hero-img-desktop {
+    /* display: block; */
+  }
+
+  /* REMOTE WORK SECTION */
+}
