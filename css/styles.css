@@ -46,8 +46,12 @@ header {
   margin-bottom: 3rem;
 }
 
-.hero img {
+.hero-img-mobile {
   width: 100%;
+}
+
+.hero-img-desltop {
+  display: none;
 }
 
 /* REMOTE WORK SECTION */
@@ -55,10 +59,6 @@ header {
   margin: 2rem;
   margin-bottom: 6rem;
   text-align: center;
-}
-
-.hero-img-desktop {
-  display: none;
 }
 
 .remote-work h1 {
@@ -98,7 +98,7 @@ header {
   font-weight: 700;
 }
 
-/* HEADER */
+/* COMPNAY LOGOS SECTION */
 .logos {
   display: flex;
   flex-wrap: wrap;
@@ -111,26 +111,49 @@ header {
   padding-bottom: 1.5rem;
 }
 
+/* FOOTER */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
 /* MEDIA QYERUES */
+
 @media only screen and (min-width: 768px) {
   body {
-    max-width: 200rem;
+    max-width: 150rem;
+    width: 100%;
     margin: 0 auto;
     color: hsl(0, 0%, 41%);
+  }
+
+  header {
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-bottom: 10rem;
     /* background-color: pink; */
   }
 
-  /* HEADER */
+  .logo img {
+    height: 3rem;
+  }
+
   .sp-menu {
     display: none;
   }
 
   .menu-desktop {
+    width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    /* max-width: 140rem; */
+    justify-content: space-between;
+    /* background-color: brown; */
   }
+
+  /* HEADER - MAIN MENU */
 
   .main-menu-desktop ul {
     display: flex;
@@ -141,8 +164,8 @@ header {
 
   .main-menu-desktop ul li {
     list-style: none;
-    margin-right: 4rem;
-    font-size: 1.6rem;
+    margin-right: 3rem;
+    font-size: 1.5rem;
     cursor: pointer;
   }
 
@@ -167,18 +190,24 @@ header {
     font-weight: 700;
   }
 
+  .arrow-down {
+    margin-left: 1rem;
+  }
+
+  /* HEADER - LOGIN MENU */
+
   .login-menu-desktop ul {
     display: flex;
-    align-items: center;
-    margin-left: 50vw;
+    align-content: flex-end;
+    justify-content: center;
+
     /* background-color: palevioletred; */
   }
 
   .login-menu-desktop ul li {
     list-style: none;
-    margin-right: 4rem;
-    justify-content: flex-end;
-    font-size: 1.6rem;
+    margin-right: 3rem;
+    font-size: 1.5rem;
     cursor: pointer;
   }
 
@@ -195,18 +224,14 @@ header {
     font-weight: 700;
   }
 
-  .arrow-down {
-    margin-left: 1rem;
-  }
-
   .register,
   .register:link,
   .register:active {
     background-color: hsl(0, 0%, 98%);
     color: hsl(0, 0%, 41%);
     border: 1px solid hsl(0, 0%, 41%);
-    padding: 1.5rem 2.5rem;
-    border-radius: 20px;
+    padding: 1rem 2.5rem;
+    border-radius: 12px;
     cursor: pointer;
     transition: all 0.3s;
   }
@@ -217,14 +242,61 @@ header {
     color: hsl(0, 0%, 8%);
   }
 
+  /* MAIN SECTION */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
   /* HERO SECTION */
   .hero-img-mobile {
     display: none;
   }
 
-  .hero-img-desktop {
-    /* display: block; */
+  .hero-img-desltop {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .hero {
+    order: 2;
   }
 
   /* REMOTE WORK SECTION */
+
+  .snap-content {
+    padding-top: 8rem;
+  }
+
+  .remote-work h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    text-align: left;
+    padding-right: 5rem;
+  }
+
+  .remote-work p {
+    margin-bottom: 7rem;
+    text-align: left;
+  }
+
+  .btn-div {
+    margin-bottom: 3rem;
+    text-align: left;
+  }
+
+  .company-logo-section {
+    margin-right: 5rem;
+    align-content: flex-end;
+  }
+  .logos {
+    display: flex;
+    margin: 0;
+    align-items: center;
+    align-content: flex-end;
+  }
 }
